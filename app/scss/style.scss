@@ -1,9 +1,68 @@
-html {
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Header__top>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+.header__inner__top {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
 }
 
+.header__inner__text {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.header__help {
+    color: $red;
+}
+
+.header__btn {
+    padding: 4px;
+    width: 72px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.header__login {
+    background-color: $red;
+}
+.header__register {
+    background-color: $green;
+}
+
+
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Header__menu>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.header__menu {
+    background-color: $bg;
+   
+   
+}
+.menu__nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+}
+.menu__list {
+    
+    li {
+        display: inline-block;
+    
+    }
+    li + li {
+        margin-left: 40px;
+    }
+    li a {
+        color: #fff;
+    }
+    
+}
